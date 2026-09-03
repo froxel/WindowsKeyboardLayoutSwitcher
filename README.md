@@ -87,3 +87,14 @@ These argument forms are also accepted:
 - These codes work only if that keyboard is already installed.
 - If nothing changes, the layout is not installed, or another window had focus when the program ran.
 
+## Build from source
+
+- The project is a single C# file compiled with the .NET Framework csc compiler that ships with Windows.
+- launch command line tool and CD into the folder where the KeyboardLayoutSwitcher.cs file exists, then run the following command
+
+```bat
+"%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\csc.exe" /nologo /target:winexe /out:KeyboardLayoutSwitcher.exe KeyboardLayoutSwitcher.cs
+```
+- you should find an .exe file generated
+- make sure you have .NET Framework 4.x (should be included with your Windows 10/11)
+
